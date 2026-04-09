@@ -1,0 +1,64 @@
+/* [Requirement] Section 1: Layout Fix [cite: 19, 23] */
+* {
+    box-sizing: border-box;
+}
+
+/* Sets the dark background for the whole page */
+body {
+    background-color: #141414;
+    color: white;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* [Mission 1] The CSS Box Model [cite: 7, 8] */
+.card {
+    background-color: #000000;
+    border-top: 5px solid #E50914; /* Your Netflix Red Line */
+    border-radius: 10px;
+    width: 350px;
+    text-align: center;
+
+    /* [Requirement] Visualize Border: The cardboard box itself [cite: 11, 33] */
+    border: 2px solid #333;
+
+    /* [Requirement] Internal Breathing Space: The bubble wrap [cite: 10, 33] */
+    padding: 20px;
+}
+
+/* [Requirement] Social Distancing for text tags [cite: 12, 36] */
+h1, p {
+    margin-bottom: 20px;
+}
+
+#profile-name {
+    color: #E50914; /* Netflix Red */
+    font-size: 28px;
+    text-transform: uppercase;
+}
+
+.card-info {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.bio {
+    color: #b3b3b3;
+    font-style: italic;
+}
+
+/* [Requirement] Separate your buttons by 15px  */
+.action-button {
+    background-color: #E50914;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-right: 15px; /* Social Distancing between buttons  */
+}
